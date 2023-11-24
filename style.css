@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+html {
+	scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    background-color: #070708;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    max-width: 1800px;
+}
+
+@media only screen and (min-width: 1800px) {
+    body {
+      margin: 25px;
+    }
+    header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    header #fundo {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    footer{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #101114; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: #23262b; 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2e3238; 
+}
+
+header {
+    background-color: #0D0C13;
+}
+
+.principal{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botoes {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.botao-principal {
+    background-color: #6CDD8E;
+    margin-right: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.botao-principal:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #6cdd8eaa;
+}
+
+#botoes .botao-secundario {
+    border-style: solid;
+    border-color: #6CDD8E;
+    color: #6CDD8E;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+#botoes .botao-secundario:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #6cdd8eaa;
+}
+
+header #fundo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('imgs/fundo.png');
+    background-size: cover;
+}
+
+header .principal #titulo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .principal #titulo-principal h1{
+    color: #6CDD8E;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+header .principal #titulo-principal h2{
+    color: aliceblue;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+header .principal #titulo-principal p{
+    color: aliceblue;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.img-principal {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+}
+
+.img-principal img {
+    height: 400px;
+    margin: 100px 0px;
+    filter: drop-shadow(0px 5px 25px #33b8bf59);
+}
+
+section {
+    background-color: #101114;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .principal {
+    width: 63%;
+}
+
+section .principal .texto {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section .principal .texto h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+    
+section .principal .texto p {
+    margin: 0;
+    margin-bottom: 13px;
+}  
+
+section .principal .img {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: right;
+}
+
+section .principal .img img {
+    height: 250px;
+    margin: 100px 0px;
+    border-radius: 15px;
+}
+
+.direita {
+    background-color: #17181b
+}
+
+.direita .principal .texto {
+    text-align: right;
+}
+
+.direita .principal .img {
+    justify-content: left;
+}
+
+#perguntas-frequentes {
+    background-color: #17181b;
+}
+
+#perguntas-frequentes .principal {
+    padding: 100px 0px;
+    width: 55%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#perguntas-frequentes .principal #perguntas .pergunta{
+    width: 100%;
+    margin: 5px 0px;
+    background-color: #6CDD8E;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.13s ease;
+}
+
+#perguntas-frequentes .principal #perguntas .pergunta:hover{
+    cursor: pointer;
+    background-color: #64cc93;
+}
+
+#perguntas-frequentes .principal #perguntas .pergunta p{
+    color: #1D1D1D;
+    font-size: large;
+    font-weight: 600;
+    margin: 18px;
+}
+
+#perguntas-frequentes .principal #perguntas .pergunta span{
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#perguntas-frequentes .principal #perguntas .pergunta img{
+    height: 13px;
+}
+
+#perguntas-frequentes .principal #perguntas .resposta{
+    margin: 0px 15px;
+    overflow: hidden;
+    height: 0;
+}
+
+#perguntas-frequentes .principal #perguntas .resposta p{
+    margin-top: 3px;
+    margin-bottom: 13px;
+}
+
+#secao-da-compra .principal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao-da-compra .principal #comprar-e-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao-da-compra .principal #comprar-e-book .img-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao-da-compra .principal #comprar-e-book .img-principal img{
+    margin: 25px 0px;
+    margin-top: 50px;
+}
+
+#secao-da-compra .principal #comprar-e-book .botao-principal{
+    color: #0D0C13;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+footer a {
+    color: rgb(172, 172, 172);
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: rgb(190, 190, 190);
+}
+
+footer{
+    color: rgb(172, 172, 172);
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    background-color: #0D0C13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #creditos{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+footer #direitos-reservados{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 1130 */
+/* 900 */
+/* 700 */
+/* 500 */
+/* 375 */
+
+@media only screen and (max-width: 1130px){
+    section .principal {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    section .principal .img img {
+        margin: 0px;
+        height: 200px;
+    }
+    section .principal .img{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .direita .principal .img {
+        justify-content: right;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    section .principal .texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    section .principal .texto #h2{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header .principal {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header .principal .img-principal {
+        display: none;
+    }
+
+    header .principal #titulo-principal{
+        margin: 50px 0px;
+    }
+        
+}
+
+@media only screen and (max-width: 700px) {
+    header .principal #titulo-principal h1{
+        font-size: 25px;
+    }   
+    header .principal #titulo-principal h2{
+        font-size: 20px;
+    } 
+    header .principal #titulo-principal p{
+        font-size: 15px;
+    }
+
+    #botoes {
+        font-size: 15px;
+    }
+    .botao-principal {
+        font-size: 15px;
+    }
+
+    section .principal .texto h2 {
+        font-size: 20px;
+    }
+    section .principal .texto p {
+        font-size: 15px;
+    }
+
+    #perguntas-frequentes .principal #perguntas .pergunta p{
+        font-size: 15px;
+    }
+    #perguntas-frequentes .principal #perguntas .resposta p{
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section .principal .img img {
+        margin: 0px;
+        height: 150px;
+    }
+
+    .img-principal img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    section .principal .img img {
+        margin: 0px;
+        width: 160px;
+        height: 123px;
+    }
+}
